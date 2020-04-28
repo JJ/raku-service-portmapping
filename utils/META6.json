@@ -1,0 +1,20 @@
+{
+  "auth" : "",
+  "authors" : [],
+  "build-depends" : [ ],
+  "depends" : [
+    "Cro::HTTP::Client","Text::CSV"
+  ],
+  "description" : "Module dependencies for downloading script",
+  "license" : "gpl-3.0",
+  "name" : "",
+  "perl" : "6.*",
+  "provides" : { },
+  "resources" : [ ],
+  "source-url" : "",
+  "tags" : [
+    "modules","ports","services"
+  ],
+  "test-depends" : [],
+  "version" : "0.0.1"
+}
