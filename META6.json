@@ -1,7 +1,7 @@
 {
-  "name": "Services::PortMapping",
+  "name": "Services-PortMapping",
   "description": "Constants with TCP and UDP port mappings",
-  "version": "0.0.1",
+  "version": "v0.0.1",
   "perl": "6.*",
   "authors": [
     "JJ Merelo"
@@ -16,7 +16,7 @@
   "resources": [
     "data/service-names-port-numbers.csv"
   ],
-  "license": "gpl-3.0",
+  "license": "GPL-3.0-only",
   "tags": [
     "modules",
     "udp",
@@ -24,5 +24,5 @@
     "ports",
     "services"
   ],
-  "source-url": "https://github.com/JJ/raku-service-portmapping"
+  "source-url": "https://github.com/JJ/raku-service-portmapping.git"
 }
