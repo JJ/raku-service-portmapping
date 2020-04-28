@@ -1,21 +1,17 @@
-#!/usr/bin/env perl6
+unit module Services::PortMapping;
 
-use Cro::HTTP::Client;
 use Text::CSV;
 
-#constant $url = "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv";
-#
-#my $client = Cro::HTTP::Client.new(
-#    headers => [
-#        User-agent => 'Raku Service PortMapping'
-#    ]); # Need user agent to avoid 403
-#my $mapping-resp = await $client.get( $url );
-#my $mapping = await $mapping-resp.body;
+my $file = "resources/data/service-names-port-numbers.csv".IO.e
+            ??"resources/data/service-names-port-numbers.csv"
+            !!%?RESOURCES<resources/data/service-names-port-numbers.csv>;
 
-my @csv = csv( in => "utils/service-names-port-numbers.csv",
-                headers => "auto");
+my @csv = csv( in => $file, headers => "auto");
 
-my (%TCPPorts, %TCPServices, %UDPPorts, %UDPServices);
+our %TCPPorts is export;
+our %TCPServices is Export;
+our %UDPPorts is Export;
+our %UDPServices is Export;
 
 for @csv -> %line {
     next unless %line{'Port Number'};
@@ -31,9 +27,4 @@ for @csv -> %line {
         }
     }
 }
-
-say %TCPPorts.raku;
-say %UDPPorts.raku;
-say %TCPServices.raku;
-say %UDPServices.raku;
 
