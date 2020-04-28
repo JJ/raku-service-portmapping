@@ -3,18 +3,26 @@
   "description": "Constants with TCP and UDP port mappings",
   "version": "0.0.1",
   "perl": "6.*",
-  "authors": ["JJ Merelo"],
+  "authors": [
+    "JJ Merelo"
+  ],
   "auth": "github:JJ",
   "depends": [
     "Text::CSV"
   ],
   "provides": {
-    "Services::PortMapping" => "lib/Services/PortMapping.pm6"
+    "Services::PortMapping": "lib/Services/PortMapping.pm6"
   },
-  "resources": [ "data/service-names-port-numbers.csv"],
+  "resources": [
+    "data/service-names-port-numbers.csv"
+  ],
   "license": "gpl-3.0",
   "tags": [
-    "modules"
+    "modules",
+    "udp",
+    "tcp",
+    "ports",
+    "services"
   ],
   "source-url": "https://github.com/JJ/raku-service-portmapping"
 }
