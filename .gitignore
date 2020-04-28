@@ -7,3 +7,5 @@ lib/.precomp
 
 .idea
 *~
+*.csv
+*.iml
