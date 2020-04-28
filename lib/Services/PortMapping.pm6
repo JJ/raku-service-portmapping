@@ -2,11 +2,11 @@ unit module Services::PortMapping;
 
 use Text::CSV;
 
-my $file = "resources/data/service-names-port-numbers.csv".IO.e
-        ??"resources/data/service-names-port-numbers.csv"
-        !!%?RESOURCES<data/service-names-port-numbers.csv>;
+my $csv = "resources/data/service-names-port-numbers.csv".IO.e
+        ??"resources/data/service-names-port-numbers.csv".IO.slurp
+        !!%?RESOURCES<data/service-names-port-numbers.csv>.slurp;
 
-my @csv = csv( in => $file, headers => "auto");
+my @csv = csv( in => [$csv], headers => "auto");
 
 our %TCPPorts is export;
 our %TCPServices is export;

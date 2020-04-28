@@ -1,7 +1,7 @@
 {
   "name": "Services::PortMapping",
   "description": "Constants with TCP and UDP port mappings",
-  "version": "v0.0.1",
+  "version": "v0.0.2",
   "perl": "6.*",
   "authors": [
     "JJ Merelo"
