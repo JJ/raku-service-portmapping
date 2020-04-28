@@ -4,7 +4,7 @@ use Text::CSV;
 
 my $file = "resources/data/service-names-port-numbers.csv".IO.e
         ??"resources/data/service-names-port-numbers.csv"
-        !!%?RESOURCES<resources/data/service-names-port-numbers.csv>;
+        !!%?RESOURCES<data/service-names-port-numbers.csv>;
 
 my @csv = csv( in => $file, headers => "auto");
 
