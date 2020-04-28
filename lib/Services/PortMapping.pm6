@@ -18,11 +18,11 @@ for @csv -> %line {
     next unless %line{'Service Name'};
     given %line{"Transport Protocol"} {
         when 'tcp' {
-            %TCPPorts{%line{"Service Name"}} = %line{"Port Number"};
+            %TCPPorts{%line{"Service Name"}} = %line{"Port Number"}.Int;
             %TCPServices{%line{"Port Number"}} = %line{"Service Name"};
         }
         when 'udp' {
-            %UDPPorts{%line{"Service Name"}} = %line{"Port Number"};
+            %UDPPorts{%line{"Service Name"}} = %line{"Port Number"}.Int;
             %UDPServices{%line{"Port Number"}} = %line{"Service Name"};
         }
     }
