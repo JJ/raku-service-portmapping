@@ -7,7 +7,7 @@ included in the distribution, creates and exports 4 hashes that map ports to
  * `%TCPServices` maps ports to TCP services
  * `%TCPPorts` maps service names to ports;
  
- And idem with UDP instead of TCP.
+And idem with UDP instead of TCP.
  
 # Example
 
@@ -16,7 +16,7 @@ say %TCPServices<80>; # should return www-http
 say %UDPPorts<domain>;   # should return 53
 ```
 
-You can also use .keys to print the existing values.
+You can also use .keys to print the existing ports or services.
 
 ## License
 
