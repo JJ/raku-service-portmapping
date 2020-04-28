@@ -6,12 +6,12 @@
   "authors": [],
   "auth": "",
   "depends": [
-    "JSON::Fast"
+    "Text::CSV"
   ],
   "build-depends": [],
   "test-depends": [],
   "provides": {
-    "Service::PortMapping": "lib/Service/PortMapping.pm6"
+    "Services::PortMapping" => "lib/Services/PortMapping.pm6"
   },
   "resources": [],
   "license": "gpl-3.0",

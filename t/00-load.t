@@ -1,6 +1,6 @@
 
 use Test;
 
-use-ok("Service::PortMapping");
+use-ok("Services::PortMapping");
 
 done-testing;
