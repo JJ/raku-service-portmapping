@@ -1,5 +1,5 @@
 {
-  "name": "Services-PortMapping",
+  "name": "Services::PortMapping",
   "description": "Constants with TCP and UDP port mappings",
   "version": "v0.0.1",
   "perl": "6.*",
