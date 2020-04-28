@@ -1,20 +1,22 @@
 {
-  "auth" : "",
-  "authors" : [],
-  "build-depends" : [ ],
-  "depends" : [
+  "name": "",
+  "description": "",
+  "version": "0.0.1",
+  "perl": "6.*",
+  "authors": [],
+  "auth": "",
+  "depends": [
     "JSON::Fast"
   ],
-  "description" : "",
-  "license" : "gpl-3.0",
-  "name" : "",
-  "perl" : "6.*",
-  "provides" : { },
-  "resources" : [ ],
-  "source-url" : "",
-  "tags" : [
+  "build-depends": [],
+  "test-depends": [],
+  "provides": {
+    "Service::PortMapping": "lib/Service/PortMapping.pm6"
+  },
+  "resources": [],
+  "license": "gpl-3.0",
+  "tags": [
     "modules"
   ],
-  "test-depends" : [],
-  "version" : "0.0.1"
+  "source-url": ""
 }
