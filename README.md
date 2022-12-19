@@ -1,4 +1,4 @@
-# Services::PortMapping 
+# Services::PortMapping  [![Test-install distro](https://github.com/JJ/raku-service-portmapping/actions/workflows/test.yaml/badge.svg)](https://github.com/JJ/raku-service-portmapping/actions/workflows/test.yaml)
 
 Map ports to services (and back) for internet services. Using [this CSV file](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv) 
 included in the distribution, creates and exports 4 hashes that map ports to
