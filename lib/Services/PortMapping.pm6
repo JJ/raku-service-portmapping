@@ -12,6 +12,10 @@ our %TCPPorts is export;
 our %TCPServices is export;
 our %UDPPorts is export;
 our %UDPServices is export;
+our %SCTPPorts is export;
+our %SCTPServices is export;
+our %DCCPPorts is export;
+our %DCCPServices is export;
 
 for @csv -> %line {
     next unless %line{'Port Number'};
@@ -24,6 +28,14 @@ for @csv -> %line {
         when 'udp' {
             %UDPPorts{%line{"Service Name"}} = %line{"Port Number"}.Int;
             %UDPServices{%line{"Port Number"}} = %line{"Service Name"};
+        }
+        when 'sctp' {
+            %SCTPPorts{%line{"Service Name"}} = %line{"Port Number"}.Int;
+            %SCTPServices{%line{"Port Number"}} = %line{"Service Name"};
+        }
+        when 'dccp' {
+            %DCCPPorts{%line{"Service Name"}} = %line{"Port Number"}.Int;
+            %DCCPServices{%line{"Port Number"}} = %line{"Service Name"};
         }
     }
 }
