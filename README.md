@@ -11,13 +11,21 @@ And idem with UDP instead of TCP.
  
 # Example
 
+We have `[protocol]Services`, a hash that maps port numbers to the services
+ it hosts, and `[protocol]Ports`, which maps the conventional service name to
+  the port it uses. `protocol == any <TCP UDP SCTP DCCP>`
+
+> No, I had never heard about these last two before
+
 ```
 say %TCPServices<80>; # should return www-http
 say %UDPPorts<domain>;   # should return 53
 ```
 
-You can also use .keys to print the existing ports or services.
+You can also use `.keys` to print the existing ports or services.
 
 ## License
 
-GPL
+(c) JJ Merelo, `jj@raku.org`, 2020-2022
+
+Released under the GPL-3.0 license.
